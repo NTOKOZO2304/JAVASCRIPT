@@ -1,0 +1,34 @@
+<!-- switch.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Switch Statement</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="advice">Choose Weather</h1>
+    <select id="weather" onchange="weatherAdvice()">
+      <option value="sunny">Sunny</option>
+      <option value="windy">Windy</option>
+    </select>
+    <script>
+      function weatherAdvice() {
+        var weatherSelected = document.getElementById("weather").value;
+        var advise;
+        switch (weatherSelected) {
+          case "sunny":
+            advise = "Wear your sunglasses";
+            break;
+          case "windy":
+            advise = "Wear a jacket";
+            break;
+        }
+        document.getElementById("advice").innerHTML = advise;
+      }
+    </script>
+  </div>
+</body>
+</html>

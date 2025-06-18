@@ -1,0 +1,21 @@
+<!-- stringsAndNumbers.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strings and Numbers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="addition">Result will appear here</h1>
+    <script>
+      function addNumbers(num1, num2) {
+        return parseInt(num1) + parseInt(num2);
+      }
+      document.getElementById("addition").innerHTML = addNumbers("10", "7");
+    </script>
+  </div>
+</body>
+</html>

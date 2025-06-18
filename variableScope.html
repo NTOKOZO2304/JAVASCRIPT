@@ -1,0 +1,23 @@
+<!-- variableScope.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variable Scope</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="scopeDisplay">Variable Scope</h1>
+    <script>
+      var globalVar = "I am global";
+      function testScope() {
+        var localVar = "I am local";
+        document.getElementById("scopeDisplay").innerHTML = globalVar + " and " + localVar;
+      }
+      testScope();
+    </script>
+  </div>
+</body>
+</html>
